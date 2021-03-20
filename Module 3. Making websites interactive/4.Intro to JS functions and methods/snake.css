@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(0,128,128);
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    border: solid 0.5px blue;
+}
+
+.grid {
+    width: 198px;
+    height: 198px;
+    border: solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    border-radius: 2.5px;
+    background-color: yellow;
+}
