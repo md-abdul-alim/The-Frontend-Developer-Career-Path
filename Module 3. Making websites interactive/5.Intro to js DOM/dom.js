@@ -64,3 +64,51 @@ console.log(document.querySelector("#titleId").className)
 // if have, than remove.
 document.querySelector("#titleId").classList.toggle("another")
 console.log(document.querySelector("#titleId").className)
+
+console.log("--------Modifying elements-------")
+var inputBox = document.getElementById("text-input")
+inputBox.value = "Value Changed!"
+
+console.log("--------Creating elements in JS-------")
+var newLi = document.createElement("li")
+newLi.textContent = '3'
+var myList = document.getElementById("my-list")
+myList.append(newLi)
+
+//Add a paragraph after the existing unordered list with any text you want inside.
+//Do this completely in JavaScript!
+var newP = document.createElement("p")
+newP.textContent = "Hight School"
+document.body.append(newP)
+newP.style.textAlign = "center"
+newP.style.fontSize = "30px"
+document.body.append(newP)
+
+console.log("--------InnerHTML vs textContent-------")
+myList.innerHTML += "<li>3</li>"
+console.log(myList.innerHTML)
+
+document.body.innerHTML +="<p id='paragraph'>innerHTML</p>"
+document.getElementById("paragraph").style.textAlign = "center"
+
+console.log("--------Creating elements in js by for loop-------")
+
+var powerRangers = [
+    "Milon",
+    "Jason Lee Scott", 
+    "Kimberly Hart", 
+    "Zack Taylor", 
+    "Trini Kwan", 
+    "Billy Cranston"
+]
+
+var rangersList = document.getElementById("rangers")
+
+for(var i = 0; i< powerRangers.length; i++){
+    var newName = document.createElement("li")
+    newName.textContent = powerRangers[i]
+    rangersList.append(newName)
+}
+for (var i = 0; i < powerRangers.length; i++) {
+    rangersList.innerHTML += "<li>" + powerRangers[i] + "</li>"
+}
