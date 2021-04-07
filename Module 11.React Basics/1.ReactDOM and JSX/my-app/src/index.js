@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './css/style.css'
+import './css/lifecycle.css'
 import FunctionApp from './FunctionApp'
 import ClassApp from './ClassApp';
 import EventsHandling from './EventsHandling';
