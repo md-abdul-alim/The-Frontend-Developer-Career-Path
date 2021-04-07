@@ -4,11 +4,19 @@ import './css/style.css'
 import './css/lifecycle.css'
 import FunctionApp from './FunctionApp'
 import ClassApp from './ClassApp';
-import EventsHandling from './EventsHandling';
-import LifeCycle from './LifeCycle'
+import EventsHandling from './components/functionComponents/EventsHandling';
+import LifeCycle from './components/classComponents/LifeCycle'
+import ConditionalRender1 from './components/classComponents/ConditionalRender1'
+import ConditionalRender2 from './components/classComponents/ConditionalRender2'
+import ConditionalRender3 from './components/classComponents/ConditionalRender3'
+import ApiClassComponent from './components/apiComponents/apiClassComponent';
 
 
 // ReactDOM.render(<FunctionApp/>, document.getElementById('root'))
 // ReactDOM.render(<ClassApp/>, document.getElementById("classComponent"))
 // ReactDOM.render(<EventsHandling/>, document.getElementById("EventComponent"))
-ReactDOM.render(<LifeCycle/>, document.getElementById("LifeCycleMethod"))
+// ReactDOM.render(<LifeCycle/>, document.getElementById("LifeCycleMethod"))
+// ReactDOM.render(<ConditionalRender1/>, document.getElementById("ConditionalRender1"))
+// ReactDOM.render(<ConditionalRender2/>, document.getElementById("ConditionalRender2"))
+// ReactDOM.render(<ConditionalRender3/>, document.getElementById("ConditionalRender3"))
+ReactDOM.render(<ApiClassComponent/>, document.getElementById("apiClassComponent"))
