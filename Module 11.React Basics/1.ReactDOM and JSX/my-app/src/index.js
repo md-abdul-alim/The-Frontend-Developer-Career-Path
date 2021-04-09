@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './css/style.css'
 import './css/lifecycle.css'
+import './css/styleMeme.css'
 import FunctionApp from './FunctionApp'
 import ClassApp from './ClassApp';
 import EventsHandling from './components/functionComponents/EventsHandling';
@@ -13,7 +14,9 @@ import ApiCallClassComponent from './components/apiComponents/ApiCallClassCompon
 import FormsBasic from './components/formsComponents/FormsBasic';
 import FormsPractice from './components/formsComponents/FormsPractice';
 import FormsApp from './components/formsComponents/ContainerAndComponentArchitecture/FormsApp';
-import MemeGenerator from './Meme_Generator_Project/App'
+import MemeGenerator from './components/Meme_Generator_Project/App'
+import SimpleHooks from './components/hooks/SimpleHooks'
+import HooksComplex from './components/hooks/HooksComplex'
 
 
 // ReactDOM.render(<FunctionApp/>, document.getElementById('root'))
@@ -27,4 +30,6 @@ import MemeGenerator from './Meme_Generator_Project/App'
 // ReactDOM.render(<FormsBasic/>, document.getElementById("formsBasic"))
 // ReactDOM.render(<FormsPractice/>, document.getElementById("formsPractice"))
 // ReactDOM.render(<FormsApp/>, document.getElementById("formsContainerAndComponentArchitecture"))
-ReactDOM.render(<MemeGenerator/>, document.getElementById("memeGeneratorProject"))
+// ReactDOM.render(<MemeGenerator/>, document.getElementById("memeGeneratorProject"))
+// ReactDOM.render(<SimpleHooks/>, document.getElementById("hooksSimple"))
+ReactDOM.render(<HooksComplex/>, document.getElementById("hooksComplex"))
