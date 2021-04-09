@@ -9,7 +9,10 @@ import LifeCycle from './components/classComponents/LifeCycle'
 import ConditionalRender1 from './components/classComponents/ConditionalRender1'
 import ConditionalRender2 from './components/classComponents/ConditionalRender2'
 import ConditionalRender3 from './components/classComponents/ConditionalRender3'
-import ApiClassComponent from './components/apiComponents/apiClassComponent';
+import ApiCallClassComponent from './components/apiComponents/ApiCallClassComponent';
+import FormsBasic from './components/formsComponents/FormsBasic';
+import FormsPractice from './components/formsComponents/FormsPractice';
+import FormsApp from './components/formsComponents/ContainerAndComponentArchitecture/FormsApp';
 
 
 // ReactDOM.render(<FunctionApp/>, document.getElementById('root'))
@@ -19,4 +22,7 @@ import ApiClassComponent from './components/apiComponents/apiClassComponent';
 // ReactDOM.render(<ConditionalRender1/>, document.getElementById("ConditionalRender1"))
 // ReactDOM.render(<ConditionalRender2/>, document.getElementById("ConditionalRender2"))
 // ReactDOM.render(<ConditionalRender3/>, document.getElementById("ConditionalRender3"))
-ReactDOM.render(<ApiClassComponent/>, document.getElementById("apiClassComponent"))
+// ReactDOM.render(<ApiCallClassComponent/>, document.getElementById("apiClassComponent"))
+// ReactDOM.render(<FormsBasic/>, document.getElementById("formsBasic"))
+// ReactDOM.render(<FormsPractice/>, document.getElementById("formsPractice"))
+ReactDOM.render(<FormsApp/>, document.getElementById("formsContainerAndComponentArchitecture"))
