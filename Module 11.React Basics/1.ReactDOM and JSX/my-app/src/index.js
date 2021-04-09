@@ -13,6 +13,7 @@ import ApiCallClassComponent from './components/apiComponents/ApiCallClassCompon
 import FormsBasic from './components/formsComponents/FormsBasic';
 import FormsPractice from './components/formsComponents/FormsPractice';
 import FormsApp from './components/formsComponents/ContainerAndComponentArchitecture/FormsApp';
+import MemeGenerator from './Meme_Generator_Project/App'
 
 
 // ReactDOM.render(<FunctionApp/>, document.getElementById('root'))
@@ -25,4 +26,5 @@ import FormsApp from './components/formsComponents/ContainerAndComponentArchitec
 // ReactDOM.render(<ApiCallClassComponent/>, document.getElementById("apiClassComponent"))
 // ReactDOM.render(<FormsBasic/>, document.getElementById("formsBasic"))
 // ReactDOM.render(<FormsPractice/>, document.getElementById("formsPractice"))
-ReactDOM.render(<FormsApp/>, document.getElementById("formsContainerAndComponentArchitecture"))
+// ReactDOM.render(<FormsApp/>, document.getElementById("formsContainerAndComponentArchitecture"))
+ReactDOM.render(<MemeGenerator/>, document.getElementById("memeGeneratorProject"))
