@@ -21,7 +21,7 @@ function SimpleHooks() {
 
     useEffect(() =>{
         const intervalId = setInterval(()=>{
-            //setCountTime(prevCountTime => prevCountTime + 1)
+            setCountTime(prevCountTime => prevCountTime + 1)
         },1000)
         return () => clearInterval(intervalId)
     },[])
