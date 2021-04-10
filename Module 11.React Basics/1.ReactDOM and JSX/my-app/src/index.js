@@ -31,5 +31,5 @@ import HooksComplex from './components/hooks/HooksComplex'
 // ReactDOM.render(<FormsPractice/>, document.getElementById("formsPractice"))
 // ReactDOM.render(<FormsApp/>, document.getElementById("formsContainerAndComponentArchitecture"))
 // ReactDOM.render(<MemeGenerator/>, document.getElementById("memeGeneratorProject"))
-// ReactDOM.render(<SimpleHooks/>, document.getElementById("hooksSimple"))
-ReactDOM.render(<HooksComplex/>, document.getElementById("hooksComplex"))
+ReactDOM.render(<SimpleHooks/>, document.getElementById("hooksSimple"))
+// ReactDOM.render(<HooksComplex/>, document.getElementById("hooksComplex"))
