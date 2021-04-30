@@ -1,0 +1,24 @@
+React router dom
+link: https://reactrouter.com/web/guides/quick-start
+command: npm install react-router-dom
+
+Props Type
+link: https://www.npmjs.com/package/prop-types
+command: npm i prop-types
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+https://stackoverflow.com/a/8217584
+
+
+`<number>.toLocaleString("en-US", {style: "currency", currency: "USD"})`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
+
+Filled trash icon to use when hovering:
+<i className="ri-delete-bin-fill"></i>
+
+Empty trash icon to use when NOT hovering:
+<i className="ri-delete-bin-line"></i>
