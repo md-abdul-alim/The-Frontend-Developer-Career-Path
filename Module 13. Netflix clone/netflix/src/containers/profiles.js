@@ -5,12 +5,12 @@ import * as ROUTES from '../constants/routes'
 export function SelectProfileContainer({user, setProfile}){
     return (
         <>
-            <Header>
+            <Header bg={false}>
                 <Header.Frame>
                     <Header.Logo
                         to={ROUTES.HOME}
                         src="/images/misc/logo.svg"
-                        alt="Netflex"
+                        alt="Netflix"
                     />
                 </Header.Frame>
             </Header>
@@ -23,7 +23,7 @@ export function SelectProfileContainer({user, setProfile}){
                             photoURL: user.photoURL
                         })}
                     >
-                        <Profiles.Picture src="user.photoURL"/>
+                        <Profiles.Picture src={user.photoURL}/>
                         <Profiles.Name>{user.displayName}</Profiles.Name>
                     </Profiles.User>
                 </Profiles.List>
