@@ -1,0 +1,94 @@
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    padding: 0;
+    background: pink;
+}
+
+
+@media (min-width: 650px) and (max-width: 1000px) {
+    body {
+        background: rgb(219, 238, 218);
+    }
+}
+/* from a minimum width of 400px and bigger: and (orientation: landscape) */
+@media (min-width: 400px) and (max-width: 649px) {
+    body {
+        background: rgb(206, 158, 206);
+    }
+}
+
+
+/* Typography */
+
+h1{
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span {
+    color: #b7832f;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+/* Layout */
+
+img{
+    max-width: 100%;/*width: 100%;*/
+}
+
+.container{
+    width: 95%; /* In every page size there will be 5% margin all */
+    max-width: 980px;/*max-width: 1400px;*/
+    margin: 0 auto; /* it will center everything in the container */
+}
+
+.columns{
+    display: flex; /* creates columns */
+    justify-content: space-between; /* Horizontal  */
+    align-items: flex-start; /* Vertical */
+    margin: 1em 0;
+    border: 5px solid steelblue;
+}
+
+.col{
+    border: 2px solid magenta;
+}
+
+.col-1{
+    width: 20%;
+}
+
+.col-2{
+    width: 45%;
+}
+
+.col-3{
+    width: 70%;
+}
+
+.col-bg{
+    background: #212614;
+    color: #fff;
+    padding: .5rem;
+}
+
+@media (min-width: 400px) and (max-width: 649px) {
+    .columns{
+        flex-direction: column;/* flex-direction: row;  is a default behavior*/
+    }
+    .col-1,
+    .col-2,
+    .col-3{
+        width: 100%;
+    }
+}
