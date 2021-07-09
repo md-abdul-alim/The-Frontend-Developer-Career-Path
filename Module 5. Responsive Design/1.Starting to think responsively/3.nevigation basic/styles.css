@@ -1,10 +1,34 @@
 
-header{
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* First navbar start */
+h1{
+    font-size: 'lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle{
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.header{
     text-align: center;
+    background: #f8f8f8;
+    padding: 2em 0;
 }
 
 .nav-list{ /* nav ul */
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     list-style: none;
     padding: 0;
     display: flex;  /* Flex will make row to columns */
@@ -14,14 +38,120 @@ header{
 }
 
 .nav-list-item{ /* nav li */
-    border: 2px dotted orange;
+    /* border: 2px dotted orange; */
     margin: 0 1em; /* margin left wight 0 */
 }
 
 .nav-item{ /* nav a */
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
 }
 
-.nav a:hover{
-
+.nav-item:hover,
+.nav-item:focus{
+    color: #1792d2;
 }
+
+.current-page{
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
+/* First navbar end */
+
+/* Second navbar start */
+.container{
+    /* border: 1px solid red; */
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto; /* This margin 0 auto bring the container center */
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 'lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle1{
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.header1{
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+@media (max-width: 675px){
+    .container-nav{
+        flex-direction: column;
+    }
+    .header1{
+        text-align: center;
+    }
+}
+
+
+.nav-list1{ /* nav ul */
+    /* border: 1px solid magenta; */
+    list-style: none;
+    padding: 0;
+    display: flex;  /* Flex will make row to columns */
+
+    justify-content: center;
+    /* width: 3; */
+}
+
+.nav-list-item1{ /* nav li */
+    /* border: 2px dotted orange; */
+    margin-left: 2em; /* margin left wight 0 */
+}
+
+.nav-item1{ /* nav a */
+    /* border: 3px solid greenyellow; */
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+.nav-item1:hover,
+.nav-item1:focus{
+    color: #1792d2;
+}
+
+/* .current-page1{
+    border-bottom: 1px solid #707070;
+} */
+
+/* .current-page1:hover{
+    color: #707070;
+} */
+
+@media (max-width: 675px){
+    .nav-list1{
+        flex-direction: column;
+    }
+    .nav-list-item1{
+        margin: .5em 0;
+    }
+}
+
+
+/* Second navbar end */
