@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #2C73D2;
+    color: #fff;
+    text-align: center;
+}
+
+/* justify-content & align-content is same.
+justify-content work on main axis. align-content work on cross access.
+align-content only works when we have multiple row content */
+
+.flex-container {
+    border: 10px solid #F9F871;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: .25em;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* OR */
+    /* flex-flow: row wrap; */
+    justify-content: center;
+    align-items: center;/* align items work on indivisual row*/
+    flex-wrap: wrap;
+    min-height: 200vh;
+    align-content: space-between; /* align content work on all row */
+    
+}
+
+.big {
+    font-size: 2em;
+}
+
+.flex-item {
+    background: #8BEE86;
+    margin: 25px;
+    padding: 25px;
+    color: #424656;
+}
